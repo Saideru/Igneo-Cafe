@@ -17,7 +17,6 @@ import {
   ChevronRight
 } from 'lucide-react';
 
-
 // Image Constants based on User Mapping
 const IMG_BANNER = new URL('/images/benner.jpg', import.meta.url).href;
 const IMG_COFFEE1 = new URL('/images/coffee1.jpg', import.meta.url).href;
@@ -31,6 +30,30 @@ const IMG_MAINLOGO = new URL('/images/mainlogo.jpg', import.meta.url).href;
 const IMG_TACO1 = new URL('/images/taco1.jpg', import.meta.url).href;
 const IMG_TACO2 = new URL('/images/taco2.jpg', import.meta.url).href;
 const IMG_TACO3 = new URL('/images/taco3.jpg', import.meta.url).href;
+
+// Organize images into categories for easy reference
+const IMAGES = {
+  BRAND: {
+    LOGO: IMG_MAINLOGO,
+    HERO_BANNER: IMG_BANNER,
+    INTERIOR: IMG_INTERIOR1,
+    INTERIOR_ALT: IMG_INTERIOR2,
+  },
+  MENU: {
+    COFFEE_1: IMG_COFFEE1,
+    COFFEE_2: IMG_COFFEE2,
+    TACO_QUESABIRRIA: IMG_TACO1,
+    TACO_LUMBRE: IMG_TACO2,
+    TACO_SARDINE: IMG_TACO3,
+    COCKTAILS: IMG_COFFEE1, // Using coffee1 as placeholder for cocktails
+  },
+  PET_FRIENDLY: {
+    DOGS_GROUP: IMG_DOGGO1,
+    CHIHUAHUA: IMG_DOGGO2,
+    DOGS_UP: IMG_DOGGO3,
+  }
+};
+
 // --- Components ---
 
 const Navbar = () => {
@@ -559,7 +582,7 @@ const Footer = () => {
           © 2026 ÍGNEO Café Taco Cóctel. All rights reserved.
         </p>
       </div>
-    </footer>
+    </section>
   );
 };
 
