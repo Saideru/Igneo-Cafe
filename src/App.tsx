@@ -19,19 +19,18 @@ import {
 
 
 // Image Constants based on User Mapping
-const IMG_ANIME_GRID = new URL('/images/anime_figurines1.jpg', import.meta.url).href;
-const IMG_ANIME_POSKET = new URL('/images/anime_figurines2.jpg', import.meta.url).href;
-const IMG_ANIME_BOX = new URL('/images/anime_figurines3.jpg', import.meta.url).href;
-const IMG_BEADS_CANDY_FISH = new URL('/images/beads_candy_fish.jpg', import.meta.url).href;
-const IMG_BEADS_SQUARE = new URL('/images/beads_square.jpg', import.meta.url).href;
-const IMG_BEADS_PEARL = new URL('/images/beads_pearl.jpg', import.meta.url).href;
-const IMG_BRACELET_PILE = new URL('/images/bracelet_pile.jpg', import.meta.url).href;
-const IMG_BRACELET_SCATTERED = new URL('/images/bracelet_scattered.jpg', import.meta.url).href;
-const IMG_PLUSH_REPAIR = new URL('/images/plush_repair.jpg', import.meta.url).href;
-const IMG_LOGO = new URL('/images/logo.jpg', import.meta.url).href;
-const IMG_PROMO_BANNER = new URL('/images/promo_banner.jpg', import.meta.url).href;
-
-
+const IMG_BANNER = new URL('/images/benner.jpg', import.meta.url).href;
+const IMG_COFFEE1 = new URL('/images/coffee1.jpg', import.meta.url).href;
+const IMG_COFFEE2 = new URL('/images/coffee2.jpg', import.meta.url).href;
+const IMG_DOGGO1 = new URL('/images/doggo1.jpg', import.meta.url).href;
+const IMG_DOGGO2 = new URL('/images/doggo2.jpg', import.meta.url).href;
+const IMG_DOGGO3 = new URL('/images/doggo3.jpg', import.meta.url).href;
+const IMG_INTERIOR1 = new URL('/images/interiordesign.jpg', import.meta.url).href;
+const IMG_INTERIOR2 = new URL('/images/interiordesign2.jpg', import.meta.url).href;
+const IMG_MAINLOGO = new URL('/images/mainlogo.jpg', import.meta.url).href;
+const IMG_TACO1 = new URL('/images/taco1.jpg', import.meta.url).href;
+const IMG_TACO2 = new URL('/images/taco2.jpg', import.meta.url).href;
+const IMG_TACO3 = new URL('/images/taco3.jpg', import.meta.url).href;
 // --- Components ---
 
 const Navbar = () => {
