@@ -170,7 +170,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="text-xl md:text-3xl text-amber bebas tracking-[0.2em] mb-8"
+          className="text-xl md:text-3xl font-black bebas tracking-[0.2em] mb-8"
         >
           IT LIGHTS THE WAY.
         </motion.p>
