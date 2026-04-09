@@ -16,7 +16,21 @@ import {
   X,
   ChevronRight
 } from 'lucide-react';
-import { IMAGES } from './constants/images';
+
+
+// Image Constants based on User Mapping
+const IMG_ANIME_GRID = new URL('/images/anime_figurines1.jpg', import.meta.url).href;
+const IMG_ANIME_POSKET = new URL('/images/anime_figurines2.jpg', import.meta.url).href;
+const IMG_ANIME_BOX = new URL('/images/anime_figurines3.jpg', import.meta.url).href;
+const IMG_BEADS_CANDY_FISH = new URL('/images/beads_candy_fish.jpg', import.meta.url).href;
+const IMG_BEADS_SQUARE = new URL('/images/beads_square.jpg', import.meta.url).href;
+const IMG_BEADS_PEARL = new URL('/images/beads_pearl.jpg', import.meta.url).href;
+const IMG_BRACELET_PILE = new URL('/images/bracelet_pile.jpg', import.meta.url).href;
+const IMG_BRACELET_SCATTERED = new URL('/images/bracelet_scattered.jpg', import.meta.url).href;
+const IMG_PLUSH_REPAIR = new URL('/images/plush_repair.jpg', import.meta.url).href;
+const IMG_LOGO = new URL('/images/logo.jpg', import.meta.url).href;
+const IMG_PROMO_BANNER = new URL('/images/promo_banner.jpg', import.meta.url).href;
+
 
 // --- Components ---
 
