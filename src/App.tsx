@@ -17,6 +17,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 
+
 // Image Constants based on User Mapping
 const IMG_BANNER = new URL('/images/benner.jpg', import.meta.url).href;
 const IMG_COFFEE1 = new URL('/images/coffee1.jpg', import.meta.url).href;
@@ -31,7 +32,7 @@ const IMG_TACO1 = new URL('/images/taco1.jpg', import.meta.url).href;
 const IMG_TACO2 = new URL('/images/taco2.jpg', import.meta.url).href;
 const IMG_TACO3 = new URL('/images/taco3.jpg', import.meta.url).href;
 
-// Organize images into categories for easy reference
+// Organize images into categories
 const IMAGES = {
   BRAND: {
     LOGO: IMG_MAINLOGO,
@@ -45,7 +46,7 @@ const IMAGES = {
     TACO_QUESABIRRIA: IMG_TACO1,
     TACO_LUMBRE: IMG_TACO2,
     TACO_SARDINE: IMG_TACO3,
-    COCKTAILS: IMG_COFFEE1, // Using coffee1 as placeholder for cocktails
+    COCKTAILS: IMG_COFFEE1,
   },
   PET_FRIENDLY: {
     DOGS_GROUP: IMG_DOGGO1,
@@ -582,7 +583,7 @@ const Footer = () => {
           © 2026 ÍGNEO Café Taco Cóctel. All rights reserved.
         </p>
       </div>
-    </section>
+    </footer>
   );
 };
 
