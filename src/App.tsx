@@ -77,6 +77,16 @@ const Navbar = () => {
     { name: 'Visit Us', href: '#visit' },
   ];
 
+  // Function to open Facebook Messenger with pre-filled reservation message
+  const openReservation = () => {
+    const message = `Hello! I'd like to make a reservation at ÍGNEO Café.%0A%0A👤 *Name:* %0A👥 *Number of Guests:* %0A📅 *Date:* %0A⏰ *Time:* %0A📞 *Contact Number:* %0A💬 *Special Requests:* %0A%0AThank you! 🔥`;
+    
+    // Your Facebook Page ID for Igneo Cafe
+    const pageId = "61579029898471";
+    
+    window.open(`https://www.facebook.com/messages/t/${pageId}?text=${message}`, '_blank');
+  };
+
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-crimson/90 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-6'}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -92,7 +102,10 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="bg-amber text-crimson px-6 py-2 rounded-full bebas text-lg tracking-wider hover:bg-orange hover:text-cream transition-all animate-pulse-glow">
+          <button 
+            onClick={openReservation}
+            className="bg-amber text-crimson px-6 py-2 rounded-full bebas text-lg tracking-wider hover:bg-orange hover:text-cream transition-all animate-pulse-glow"
+          >
             Reserve a Table
           </button>
         </div>
@@ -122,7 +135,13 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <button className="bg-amber text-crimson px-6 py-3 rounded-full bebas text-xl tracking-wider mt-4">
+            <button 
+              onClick={() => {
+                setIsMobileMenuOpen(false);
+                openReservation();
+              }}
+              className="bg-amber text-crimson px-6 py-3 rounded-full bebas text-xl tracking-wider mt-4"
+            >
               Reserve a Table
             </button>
           </motion.div>
@@ -131,7 +150,6 @@ const Navbar = () => {
     </nav>
   );
 };
-
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
