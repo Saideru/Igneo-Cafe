@@ -78,14 +78,15 @@ const Navbar = () => {
   ];
 
   // Function to open Facebook Messenger with pre-filled reservation message
-  const openReservation = () => {
+const openReservation = () => {
     const message = `Hello! I'd like to make a reservation at ÍGNEO Café.%0A%0A👤 *Name:* %0A👥 *Number of Guests:* %0A📅 *Date:* %0A⏰ *Time:* %0A📞 *Contact Number:* %0A💬 *Special Requests:* %0A%0AThank you! 🔥`;
     
     // Your Facebook Page ID for Igneo Cafe
     const pageId = "61579029898471";
     
-    window.open(`https://www.facebook.com/messages/t/${pageId}?text=${message}`, '_blank');
-  };
+    // BEST for both PC and Mobile: Use m.me link
+    window.location.href = `https://m.me/${pageId}?text=${message}`;
+};
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-crimson/90 backdrop-blur-md py-3 shadow-lg' : 'bg-transparent py-6'}`}>
